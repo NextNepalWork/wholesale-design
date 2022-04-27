@@ -12,7 +12,7 @@ function myFunction() {
 // Navigation Js Scroll Starts
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll > 50) {
+    if (scroll > 350) {
         $(".navigation-wrap").css("border-bottom", "0.5px solid #FF6A00");
     } else {
         $(".navigation-wrap").css("border-bottom", "unset");
@@ -122,7 +122,7 @@ $('.slick-slider-category').slick({
 // Product Listing Slick Slider Starts
 $('.slick-slider-listing').slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
     dots: false,
