@@ -724,7 +724,7 @@ button.slick-prev {
     width: 100%;
     max-height: 220px;
     min-height: 220px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -1173,7 +1173,7 @@ button.slick-prev {
 #footer-wrapper a {
     text-decoration: none;
     display: flex;
-    justify-content: center;
+
     align-items: center;
     font-size: 15px;
     color: white;
@@ -1207,38 +1207,7 @@ button.slick-prev {
 }
 
 /* Footer Ends */
-/* Copyright  */
-#copyright-wrapper {
-    background-color: var(--main-color);
-}
 
-#copyright-wrapper ul li img {
-    max-height: 30px;
-    min-height: 30px;
-    object-position: center;
-    object-fit: cover;
-    width: 100%;
-}
-
-#copyright-wrapper .social-media li {
-    margin: 0 5px;
-}
-
-#copyright-wrapper .social-media li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 8px;
-    font-size: 20px;
-    border-radius: 3px;
-}
-
-#copyright-wrapper .social-media li a:hover {
-    color: var(--red) !important;
-    background-color: white;
-}
-
-/* Copyright Ends */
 /* Nav Cart Popup  */
 #nav-cart {
     z-index: 9999;
