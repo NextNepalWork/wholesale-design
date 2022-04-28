@@ -33,6 +33,14 @@ a:hover {
     color: var(--red);
 }
 
+.slick-prev {
+    left: -20px !important;
+}
+
+.slick-next {
+    right: -30px !important;
+}
+
 button {
     color: white;
     padding: 10px 15px;
@@ -296,14 +304,14 @@ sup {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     background-color: white;
 }
 
 #navigation-wrapper .navbar {
-    padding: 0rem 1rem;
+    padding: 0rem;
 }
 
 .navbar-brand img {
@@ -383,8 +391,10 @@ sup {
 #navigation-wrapper .nav-link {
     transition: all 200ms linear;
     position: relative;
-    font-size: 15px;
+    font-size: 14px;
     display: inline-block;
+    padding: 12px;
+
 }
 
 #navigation-wrapper .nav-item {
@@ -404,7 +414,7 @@ sup {
     width: 86rem;
     min-width: 100px;
     background-color: white;
-    left: 0;
+    left: 33px;
     /* transform: translateX(-300px); */
     /* box-shadow: rgb(0 0 0 / 20%) 0px 60px 40px -7px; */
     box-shadow: rgb(0 0 0 / 20%) 0px 10px 40px -7px;
@@ -442,12 +452,12 @@ sup {
 }
 
 #navigation-wrapper .nav-item span {
-    width: 6.5rem;
+    width: 7rem;
     min-height: 41px;
     max-height: 41px;
     overflow: hidden;
     display: flex;
-    align-items: center;
+
 }
 
 /* Navigation Ends*/
@@ -458,7 +468,7 @@ sup {
 
 #banner-categories-wrapper {
     /* overflow: hidden; */
-    z-index: 2;
+    z-index: 4;
 }
 
 #banner-categories-wrapper .description {
@@ -1017,7 +1027,7 @@ button.slick-prev {
     min-height: 150px;
     object-position: center;
     object-fit: contain;
-    width: 150px;
+    width: 250px;
 }
 
 .product-grid-item2 .product-content ul {

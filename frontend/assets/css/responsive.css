@@ -16,6 +16,23 @@
     }
 }
 
+@media (max-width: 1050px) {
+    #navigation-wrapper .nav-item span {
+        width: 4rem;
+        font-size: 0.7rem;
+        align-items: center;
+    }
+
+    #navigation-wrapper .nav-link {
+
+        padding: 10px;
+    }
+
+    .mega-menu-wrapper {
+        width: 60rem;
+    }
+}
+
 @media (max-width: 992px) {}
 
 @media (max-width: 769px) {
