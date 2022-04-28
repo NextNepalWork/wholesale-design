@@ -426,9 +426,9 @@ sup {
 }
 
 #navigation-wrapper li.nav-item:hover .mega-menu-wrapper {
-    display: block;
-    max-height: 500px;
-    min-height: auto;
+
+    max-height: 300px;
+    min-height: 10px;
     /* overflow-y: scroll; */
 }
 
