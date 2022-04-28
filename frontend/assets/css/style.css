@@ -55,6 +55,7 @@ button {
     overflow: hidden;
     outline: 0;
     z-index: 1;
+    background-color: var(--main-color);
 }
 
 button.effect:before {
@@ -70,6 +71,10 @@ button.effect:before {
 
 button.effect:hover:before {
     width: 100%;
+}
+
+.button-wrapper .anchor-btn2 {
+    font-size: 13px;
 }
 
 .anchor-btn:hover {
@@ -383,7 +388,7 @@ sup {
     border-color: transparent;
 }
 
-#navigation-wrapper .nav-link:hover {
+#navigation-wrapper .nav-link.d-flex:hover {
     color: var(--main-color);
     box-shadow: rgb(0 0 0 / 20%) 0px 10px 40px -7px;
 }
@@ -425,6 +430,10 @@ sup {
     max-height: 500px;
     min-height: auto;
     /* overflow-y: scroll; */
+}
+
+#navigation-wrapper li.nav-item:hover .mega-menu-wrapper .nav-link {
+    padding: 4px;
 }
 
 #navigation-wrapper .dropdown-toggle::after {
@@ -544,7 +553,7 @@ sup {
 
 #banner-categories-wrapper input::placeholder {
     font-size: 15px;
-    text-align: center;
+
 }
 
 #banner-categories-wrapper .card input[type="text"]:focus~.card-footer {
@@ -606,6 +615,16 @@ sup {
 } */
 #banner-categories-wrapper .slick-slider {
     height: 22rem;
+}
+
+#banner-categories-wrapper .card-footer .search-list-wrapper li:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+#banner-categories-wrapper .card-footer .search-list-wrapper li:hover a {
+
+    color: white;
 }
 
 #banner-categories-wrapper .border_one li a:hover {
@@ -1251,7 +1270,11 @@ button.slick-prev {
 }
 
 #nav-cart .modal-body table tr:hover {
-    background-color: var(--second-color);
+    background-color: var(--main-color);
+}
+
+#nav-cart .modal-body table tr:hover a {
+    color: white;
 }
 
 /* Nav Cart Popup Ends */
