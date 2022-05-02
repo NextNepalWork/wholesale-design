@@ -18,7 +18,6 @@ $(window).scroll(function () {
         $(".navigation-wrap").css("border-bottom", "unset");
     }
 }); // Navigation Js Scroll Ends
-
 // Brand Slick Slider Starts
 $('.our_brand').slick({
     infinite: true,
@@ -214,18 +213,14 @@ $(document).ready(function () {
             swiper: galleryThumbs
         }
     });
-
     var paneContainer = document.querySelector('.zoom');
-
     $(".swiper-slide").each(function () {
-
         new Drift($(this).find("img")[0], {
             paneContainer: paneContainer,
             inlinePane: false,
         });
     });
 });
-
 // Shipping, delivery cart 
 // Delivery info search start
 //https://codepen.io/saravanajd/pen/GGPQbY?editors=0010

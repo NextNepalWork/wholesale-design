@@ -42,184 +42,180 @@
 <body onload="myFunction()">
     <div id="loading"></div>
     <!-- Whole Body Wrapper Starts -->
-    <!--======================================================= ORDER TOP LIST START ==-->
-    <section id="order_list_top" class="py-4">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-2 col-4  text-center ">
-                    <a href="cart.html">
-                        <div class="img_order_list ">
-                            <div class="img_block_icon">
-                                <img src="frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">
+    <section id="shipping-cart-delivery" class="">
+        <!--======================================================= ORDER TOP LIST START ==-->
+        <section id="order_list_top" class="py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-2 col-4  text-center ">
+                        <a href="cart.html">
+                            <div class="img_order_list ">
+                                <div class="img_block_icon">
+                                    <img src="frontend/assets/images/logo/cart.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="content_img ">
+                                    <h6 class=""> 1.My Cart</h6>
+                                </div>
                             </div>
-                            <div class="content_img ">
-                                <h6 class=""> 1.My Cart</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-4  text-center">
+                        <a href="shipping.html">
+                            <div class="img_order_list">
+                                <div class="img_block_icon">
+                                    <img src="frontend/assets/images/logo/map.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="content_img">
+                                    <h6 class="active-item"> 2.Shipping Info</h6>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-4  text-center">
-                    <a href="shipping.html">
-                        <div class="img_order_list">
-                            <div class="img_block_icon">
-                                <img src="frontend/assets/images/logo/map.svg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-4  text-center">
+                        <a href="delivery.html">
+                            <div class="img_order_list">
+                                <div class="img_block_icon">
+                                    <img src="frontend/assets/images/logo/delivery_new.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="content_img">
+                                    <h6 class=""> 3 Delivery Info</h6>
+                                </div>
                             </div>
-                            <div class="content_img">
-                                <h6 class="active-item"> 2.Shipping Info</h6>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-4  text-center">
+                        <a href="payment.html">
+                            <div class="img_order_list">
+                                <div class="img_block_icon">
+                                    <img src="frontend/assets/images/logo/payment.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="content_img">
+                                    <h6 class=""> 4. Payment</h6>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-4  text-center">
-                    <a href="delivery.html">
-                        <div class="img_order_list">
-                            <div class="img_block_icon">
-                                <img src="frontend/assets/images/logo/delivery_new.svg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-4  text-center">
+                        <a href="order-success.html">
+                            <div class="img_order_list">
+                                <div class="img_block_icon">
+                                    <img src="frontend/assets/images/logo/confirmation.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="content_img">
+                                    <h6 class=""> 5.Confirmation</h6>
+                                </div>
                             </div>
-                            <div class="content_img">
-                                <h6 class=""> 3 Delivery Info</h6>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-4  text-center">
-                    <a href="payment.html">
-                        <div class="img_order_list">
-                            <div class="img_block_icon">
-                                <img src="frontend/assets/images/logo/payment.svg" class="img-fluid" alt="">
-                            </div>
-                            <div class="content_img">
-                                <h6 class=""> 4. Payment</h6>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-4  text-center">
-                    <a href="order-success.html">
-                        <div class="img_order_list">
-                            <div class="img_block_icon">
-                                <img src="frontend/assets/images/logo/confirmation.svg" class="img-fluid" alt="">
-                            </div>
-                            <div class="content_img">
-                                <h6 class=""> 5.Confirmation</h6>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--======================================================= ORDER TOP LIST END ======-->
-
-    <!--======================================================= CART START ======-->
-    <section id="cart_user" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-md-12">
-                    <div class="row" id="shipping">
-                        <div class="col-md-6">
-                            <label class="active card bg-white p-3 ">
-                                <input name="plan" class="radio" type="radio" checked="">
-                                <span class="plan-details">
-                                    <span class="plan-type d-block">Address: <span class="right_bold">Tinkune,
-                                            kathmandu</span> </span>
-                                    <span class="plan-type d-block">Postal Code: <span>44600</span> </span>
-                                    <span class="plan-type d-block">City:<span class="right_bold">Kathmandu</span>
+        </section>
+        <!--======================================================= ORDER TOP LIST END ======-->
+        <!--======================================================= CART START ======-->
+        <section id="cart_user" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-md-12">
+                        <div class="row" id="shipping">
+                            <div class="col-md-6">
+                                <label class="active card bg-white p-3 ">
+                                    <input name="plan" class="radio" type="radio" checked="">
+                                    <span class="plan-details">
+                                        <span class="plan-type d-block">Address: <span class="right_bold">Tinkune,
+                                                kathmandu</span> </span>
+                                        <span class="plan-type d-block">Postal Code: <span>44600</span> </span>
+                                        <span class="plan-type d-block">City:<span class="right_bold">Kathmandu</span>
+                                        </span>
+                                        <span class="plan-type d-block">Country: <span class="right_bold">Nepal</span>
+                                        </span>
+                                        <span class="plan-type d-block">Phone: <span class="right_bold">+977
+                                                9801881588</span> </span>
                                     </span>
-                                    <span class="plan-type d-block">Country: <span class="right_bold">Nepal</span>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="card bg-white p-3">
+                                    <input name="plan" class="radio" type="radio" checked="">
+                                    <span class="plan-details">
+                                        <span class="plan-type d-block">Address: <span class="right_bold">Tinkune,
+                                                kathmandu</span> </span>
+                                        <span class="plan-type d-block">Postal Code: <span>44600</span> </span>
+                                        <span class="plan-type d-block">City:<span class="right_bold">Kathmandu</span>
+                                        </span>
+                                        <span class="plan-type d-block">Country: <span class="right_bold">Nepal</span>
+                                        </span>
+                                        <span class="plan-type d-block">Phone: <span class="right_bold">+977
+                                                9801881588</span> </span>
                                     </span>
-                                    <span class="plan-type d-block">Phone: <span class="right_bold">+977
-                                            9801881588</span> </span>
-                                </span>
-                            </label>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="card bg-white p-3">
+                                    <input name="plan" class="radio" type="radio" checked="">
+                                    <span class="plan-details">
+                                        <span class="plan-type d-block">Address: <span class="right_bold">Tinkune,
+                                                kathmandu</span> </span>
+                                        <span class="plan-type d-block">Postal Code: <span>44600</span> </span>
+                                        <span class="plan-type d-block">City:<span class="right_bold">Kathmandu</span>
+                                        </span>
+                                        <span class="plan-type d-block">Country: <span class="right_bold">Nepal</span>
+                                        </span>
+                                        <span class="plan-type d-block">Phone: <span class="right_bold">+977
+                                                9801881588</span> </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn add_btn_img" data-toggle="modal"
+                                    data-target="#spipping_add">
+                                    <img src="https://image.flaticon.com/icons/png/512/1104/1104261.png" alt=""
+                                        class="img-fluid">
+                                </button>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <label class="card bg-white p-3">
-                                <input name="plan" class="radio" type="radio" checked="">
-                                <span class="plan-details">
-                                    <span class="plan-type d-block">Address: <span class="right_bold">Tinkune,
-                                            kathmandu</span> </span>
-                                    <span class="plan-type d-block">Postal Code: <span>44600</span> </span>
-                                    <span class="plan-type d-block">City:<span class="right_bold">Kathmandu</span>
-                                    </span>
-                                    <span class="plan-type d-block">Country: <span class="right_bold">Nepal</span>
-                                    </span>
-                                    <span class="plan-type d-block">Phone: <span class="right_bold">+977
-                                            9801881588</span> </span>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="card bg-white p-3">
-                                <input name="plan" class="radio" type="radio" checked="">
-                                <span class="plan-details">
-                                    <span class="plan-type d-block">Address: <span class="right_bold">Tinkune,
-                                            kathmandu</span> </span>
-                                    <span class="plan-type d-block">Postal Code: <span>44600</span> </span>
-                                    <span class="plan-type d-block">City:<span class="right_bold">Kathmandu</span>
-                                    </span>
-                                    <span class="plan-type d-block">Country: <span class="right_bold">Nepal</span>
-                                    </span>
-                                    <span class="plan-type d-block">Phone: <span class="right_bold">+977
-                                            9801881588</span> </span>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="col-md-6">
-                            <button type="button" class="btn add_btn_img" data-toggle="modal"
-                                data-target="#spipping_add">
-                                <img src="https://image.flaticon.com/icons/png/512/1104/1104261.png" alt=""
-                                    class="img-fluid">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mt-2">
-                        <div class="col-md-12 mb-3">
-                            <div
-                                class="button_block d-flex justify-content-around align-items-center flex-wrap mb-4 mb-md-0">
-                                <a href="" class="my-1"> <span><i class="fa fa-reply-all"></i></span> Return to shop</a>
-                                <!-- <a href="" class="btn_custom">Continue to Shipping</a> -->
-                                <a href="delivery_info.html"> <button class="anchor-btn2">Continue to Delivery
-                                        Info
-                                    </button></a>
+                        <div class="row justify-content-center mt-2">
+                            <div class="col-md-12 mb-3">
+                                <div
+                                    class="button_block d-flex justify-content-around align-items-center flex-wrap mb-4 mb-md-0">
+                                    <a href="" class="my-1"> <span><i class="fa fa-reply-all"></i></span> Return to
+                                        shop</a>
+                                    <!-- <a href="" class="btn_custom">Continue to Shipping</a> -->
+                                    <a href="delivery_info.html"> <button class="anchor-btn2">Continue to Delivery
+                                            Info
+                                        </button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
-                </div>
-                <div class="col-xl-4 col-md-7 m-auto m-xl-0">
-                    <div class="row justify-content-end">
-                        <div class="col-12">
-                            <div class="cart-info card p-4">
-                                <h4 class="mb-4">Cart totals</h4>
-
-                                <ul class="list-unstyled mb-4">
-                                    <li class="d-flex justify-content-between pb-2 mb-3">
-                                        <h5>Subtotal</h5>
-                                        <span>$90.00</span>
-                                    </li>
-
-                                    <li class="d-flex justify-content-between pb-2 mb-3">
-                                        <h5>Shipping</h5>
-                                        <span>Free</span>
-                                    </li>
-
-                                    <li class="d-flex justify-content-between pb-2">
-                                        <h5>Total</h5>
-                                        <span>$90.00</span>
-                                    </li>
-                                </ul>
-                                <a href="checkout.html" class="anchor-btn2 text-center">Proceed to checkout</a>
+                    <div class="col-xl-4 col-md-7 m-auto m-xl-0">
+                        <div class="row justify-content-end">
+                            <div class="col-12">
+                                <div class="cart-info card p-4">
+                                    <h4 class="mb-4">Cart totals</h4>
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="d-flex justify-content-between pb-2 mb-3">
+                                            <h5>Subtotal</h5>
+                                            <span>$90.00</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between pb-2 mb-3">
+                                            <h5>Shipping</h5>
+                                            <span>Free</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between pb-2">
+                                            <h5>Total</h5>
+                                            <span>$90.00</span>
+                                        </li>
+                                    </ul>
+                                    <a href="checkout.html" class="anchor-btn2 text-center">Proceed to checkout</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!--======================================================= CART End ======-->
     </section>
-    <!--=========
-
     <!-- Scroll Button -->
     <section id="scroll-btn">
         <a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
