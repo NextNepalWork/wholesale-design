@@ -42,467 +42,647 @@
 <body onload="myFunction()">
     <div id="loading"></div>
     <!-- Whole Body Wrapper Starts -->
-    <section id="product-listing-wrapper" class="py-5">
+    <section id="product-detail-wrapper" class="py-5">
         <div class="container-fluid">
-            <div class="product-lists">
-                <div class="row">
-                    <div class="col-lg-2 col-12">
-                        <div class="left-side-wrapper d-lg-block d-none">
-                            <!-- Content -->
-                            <div class="card-wrapper mb-2">
-                                <div class="card-group-item">
-                                    <div class="card-head">
-                                        <div class="heading d-flex align-items-center text-center flex-wrap  p-2">
-                                            <div class="head">
-                                                <h5 class="text-uppercase m-0 text-white">Categories</h5>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="product-carousel">
+
+                        <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="frontend/assets/images/banner/1.jpg"
+                                        data-zoom="frontend/assets/images/banner/1.jpg" class="img-responsive asdf">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="frontend/assets/images/banner/2.jpg"
+                                        data-zoom="frontend/assets/images/banner/1.jpg" class="img-responsive fdsa">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="frontend/assets/images/banner/1.jpg"
+                                        data-zoom="frontend/assets/images/banner/1.jpg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="frontend/assets/images/banner/1.jpg"
+                                        data-zoom="frontend/assets/images/banner/1.jpg">
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
+                        </div>
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"
+                                    style="background-image:url(frontend/assets/images/banner/1.jpg)">
+                                </div>
+                                <div class="swiper-slide"
+                                    style="background-image:url(frontend/assets/images/banner/2.jpg)">
+                                </div>
+                                <div class="swiper-slide"
+                                    style="background-image:url(frontend/assets/images/banner/1.jpg)">
+                                </div>
+                                <div class="swiper-slide"
+                                    style="background-image:url(frontend/assets/images/banner/1.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zoom">
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="right-side-wrapper products-seller w-100">
+                        <ul class="products">
+                            <li>
+                                <div class="row py-3 mb-3 bg-white">
+                                    <div class="col-lg-8 col-md-6 col-sm-12 col-12 post">
+                                        <div class="product-grid-item d-flex align-items-center">
+
+                                            <div class="product-content ml-3">
+                                                <a href="#" class="title">White Toilet Paper Bathroom Roll
+                                                    Classic</a>
+                                                <div class="price mb-1"> <span class="font-weight-bold">Npr
+                                                        150</span>
+                                                    /packet
+                                                </div>
+                                                <ul class="other-detail">
+                                                    <li>Brand: <span>Abc</span> </li>
+                                                    <li>Category: <span> White or as per customer requirement
+                                                        </span> </li>
+                                                    <li>Weight: <span>Abc</span> </li>
+                                                    <li>Type: <span>Hotel, Home, Hospital, Restaurant</span> </li>
+                                                </ul>
+                                                <div class="enterprise mb-2">Sold by: <span
+                                                        class="font-weight-bold">Shah
+                                                        Enterprise</span>
+                                                </div>
+                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                                    repudiandae minus nihil fugit est unde, ratione dolorum perferendis
+                                                    nam at dolor maxime modi dolores dignissimos eum reprehenderit?
+                                                    Debitis, non dolores.</p>
+
+                                                <form class="product-types">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-4">
+                                                            <label>Weight</label>
+                                                            <select id="size" class="form-control">
+                                                                <option selected="">Choose...</option>
+                                                                <option>1kg</option>
+                                                                <option>2kg</option>
+                                                                <option>3kg</option>
+                                                            </select>
+                                                        </div>
+                                                        <!-- <div class="form-group col-md-8">
+                                                            <div class="quantity mb-3">
+                                                                <label>Quantity <span>(Must be greater than
+                                                                        6pcs)</span> </label>
+                                                                <div>
+                                                                    <input type="number" placeholder="1"></div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <ul class="d-flex mb-3 extralink">
+                                                        <li> <a href="" class="mr-3">Add to Compare</a>
+                                                        </li>
+                                                        <li> <a href="" class="mr-3">Add to Wishlist</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="button-wrapper">
+                                                        <button class="effect">Add to Cart</button>
+                                                        <button class="effect">Buy Now</button>
+                                                    </div>
+                                                    <div class="info mt-2">
+                                                        <p><span>
+                                                                Estimated Delivery:
+                                                            </span>1-2 days inside Valley & 2-3 days Outside valley
+                                                        </p>
+                                                    </div>
+                                                    <div class="vendor-contact-info">
+                                                        <ul class="social-links d-flex align-items-center pl-0">
+                                                            <h6 class="mb-0 mr-2">Share On:</h6>
+                                                            <li class="logo-bg">
+                                                                <a href="https://www.facebook.com" class="text-white"><i
+                                                                        class="fa fa-facebook"
+                                                                        aria-hidden="true"></i></a>
+                                                            </li>
+                                                            <li class="feature_in_bg ml-3">
+                                                                <a href="https://www.instagram.com"
+                                                                    class="text-white"><i class="fa fa-instagram"
+                                                                        aria-hidden="true"></i></a>
+                                                            </li>
+                                                            <li class="logo-bg ml-3">
+                                                                <a href="https://www.google.com" class="text-white"><i
+                                                                        class="fa fa-google-plus"
+                                                                        aria-hidden="true"></i></a>
+                                                            </li>
+                                                            <li class="logo-bg ml-3">
+                                                                <a href="https://np.linkedin.com" class="text-white"><i
+                                                                        class="fa fa-linkedin"
+                                                                        aria-hidden="true"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="filter-content1">
-                                        <div class="card-body p-3">
-                                            <ul class="mb-0">
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1 active">Nepal
-                                                            Origin</a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Luke</a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1 ">Local Made</a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1">Mozzrilla Special</a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1 ">Ghee Cheese</a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1 ">Denver Origin</a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="collapse" id="expand1" style="">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 seller-info">
+                                        <div class="seller-info-box p-3">
+                                            <div class="sold-by position-relative">
+                                                <div class="position-absolute medal-badge">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                                                        viewBox="0 0 287.5 442.2">
+                                                        <polygon style="fill:#F8B517;"
+                                                            points="223.4,442.2 143.8,376.7 64.1,442.2 64.1,215.3 223.4,215.3 ">
+                                                        </polygon>
+                                                        <circle style="fill:#FBD303;" cx="143.8" cy="143.8" r="143.8">
+                                                        </circle>
+                                                        <circle style="fill:#F8B517;" cx="143.8" cy="143.8" r="93.6">
+                                                        </circle>
+                                                        <polygon style="fill:#FCFCFD;" points="143.8,55.9 163.4,116.6 227.5,116.6 175.6,154.3 195.6,215.3 143.8,177.7 91.9,215.3 111.9,154.3
+                                                                                        60,116.6 124.1,116.6 ">
+                                                        </polygon>
+                                                    </svg>
+                                                </div>
+                                                <div class="title font-weight-bold">Sold By</div>
+                                                <a href="" class="name d-block font-weight-bold">
+                                                    Shah Enterprise
+                                                    <span class="ml-2"><i class="fa fa-check-circle"
+                                                            style="color:green"></i></span>
+                                                </a>
+                                                <div class="rating text-center d-block">
+                                                    <span class="star-rating star-rating-sm d-block">
+                                                        <i class="fa fa-star text-secondary"></i><i
+                                                            class="fa fa-star text-secondary"></i><i
+                                                            class="fa fa-star text-secondary"></i><i
+                                                            class="fa fa-star text-secondary"></i><i
+                                                            class="fa fa-star text-secondary"></i>
+                                                    </span>
+                                                    <span class="rating-count d-block ml-0">(0 customer
+                                                        reviews)</span>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center align-items-center">
+                                                <a href="" class="anchor-btn2 mt-2">Visit Store</a>
+                                            </div>
+                                        </div>
+                                        <div class="sidebar mb-5">
+                                            <div class="popular-post">
+                                                <div class="title position-relative bg-light p-3">
+                                                    <h6 class="title m-0">Products by Seller </h6>
+                                                </div>
                                                 <ul>
                                                     <li>
-                                                        <div class="item">
-                                                            <a href="" class="category-item py-1">Cheese Category
-                                                                1</a>
+                                                        <div class="d-flex align-items-center px-3">
+                                                            <div class="post-image mr-2 w-xl-25 w-md-0">
+                                                                <img src="frontend/assets/images/product-images/1.jpg"
+                                                                    class="img-fluid ">
+                                                            </div>
+                                                            <div class="post-content w-75">
+                                                                <div class="post-title">
+                                                                    <a href="program-details.html">
+                                                                        Market is Changing
+                                                                    </a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="item">
-                                                            <a href="" class="category-item py-1 ">Cheese Category
-                                                                1</a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item">
-                                                            <a href="" class="category-item py-1 ">Cheese Category
-                                                                1</a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item">
-                                                            <a href="" class="category-item py-1">Cheese Category
-                                                                1</a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item">
-                                                            <a href="" class="category-item py-1 ">Cheese Category
-                                                                1</a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item">
-                                                            <a href="" class="category-item py-1 ">Cheese Category
-                                                                1</a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item">
-                                                            <a href="" class="category-item py-1">Cheese Category
-                                                                1</a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item">
-                                                            <a href="" class="category-item py-1 ">Cheese Category
-                                                                1</a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item">
-                                                            <a href="" class="category-item py-1 ">Cheese Category
-                                                                1</a>
+                                                        <div class="d-flex align-items-center px-3">
+                                                            <div class="post-image mr-2 w-xl-25 w-md-0">
+                                                                <img src="frontend/assets/images/product-images/1.jpg"
+                                                                    class="img-fluid ">
+                                                            </div>
+                                                            <div class="post-content w-75">
+                                                                <div class="post-title">
+                                                                    <a href="program-details.html">
+                                                                        Market is Changing
+                                                                    </a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
-                                        <!-- card-body.// -->
-                                    </div>
-                                    <div class="expand">
-                                        <a data-toggle="collapse" href="#expand1" role="button" aria-expanded="false"
-                                            aria-controls="expand1" class="collapsed">View more</a>
                                     </div>
                                 </div>
-                                <!-- card-group-item.// -->
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="first-tab" data-toggle="tab" href="#first"
+                                role="tab" aria-controls="first" aria-selected="true">Additional Information</a>
+                            <a class="nav-item nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab"
+                                aria-controls="second" aria-selected="false">Reviews <span>(9)</span> </a>
+                            <a class="nav-item nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab"
+                                aria-controls="second" aria-selected="false">Company Description</a>
+
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active p-3 w-75" id="first" role="tabpanel"
+                            aria-labelledby="first-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi, non praesentium corrupti illum, repudiandae adipisci, fuga nesciunt deserunt
+                            ipsam inventore ad fugit beatae necessitatibus maiores mollitia rem officiis tenetur!
+                            Corrupti.
+                            <div class="table-responsive mt-4">
+                                <h4>Branded T-Shirt</h4>
+                                <table class="table">
+
+                                    <tbody>
+                                        <tr>
+                                            <th>Available Size</th>
+                                            <td>Large, Medium, Small</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Material</th>
+                                            <td>Silk</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <!-- Content Ends -->
-                            <!-- Content -->
-                            <div class="card-wrapper mt-4 mb-2">
-                                <div class="card-group-item">
-                                    <div class="card-head">
-                                        <div class="heading d-flex align-items-center text-center flex-wrap p-2">
-                                            <div class="head">
-                                                <h5 class="text-uppercase m-0 text-white">Product</h5>
-                                            </div>
-                                        </div>
+                        </div>
+                        <div class="tab-pane fade p-3" id="second" role="tabpanel" aria-labelledby="second-tab">
+                            <div class="row align-items-center justify-content-center">
+                                <!-- people Comments -->
+                                <div class="col-xl-8 col-lg-8 col-12 mb-4">
+                                    <div class="d-flex people-comment">
+                                        <ul class="comment-wrapper">
+                                            <li class="d-flex mb-2 p-4">
+                                                <div class="image mr-3">
+                                                    <a href="#">
+                                                        <img class="img-responsive user-photo"
+                                                            src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5>Azar Hank</h5>
+                                                    <div class="comment-date mb-2">
+                                                        <p class="m-0 text-uppercase"> 12 March, 2021 AT 10:51 </p>
+                                                    </div>
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+                                                        consequuntur repudiandae, ducimus error animi neque
+                                                        recusandae optio tempora non sequi cupiditate ipsum
+                                                        perspiciatis porro maxime praesentium
+                                                        doloribus amet delectus velit.</p>
+                                                    <!-- Comment Reply -->
+                                                    <ul>
+                                                        <li>
+                                                            <div class="comment-reply">
+                                                                <div class="d-flex">
+                                                                    <div class="image mr-3">
+                                                                        <a href="#">
+                                                                            <img class="img-responsive user-photo"
+                                                                                src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h5>Azar Hank</h5>
+                                                                        <div class="comment-date mb-2">
+                                                                            <p class="m-0 text-uppercase"> 12 March,
+                                                                                2021 AT 10:50 </p>
+                                                                        </div>
+                                                                        <p>Lorem ipsum, dolor sit amet consectetur
+                                                                            adipisicing elit. Sed consequuntur
+                                                                            repudiandae, ducimus error animi neque
+                                                                            recusandae optio tempora non sequi
+                                                                            cupiditate ipsum perspiciatis
+                                                                            porro maxime praesentium doloribus amet
+                                                                            delectus velit.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- Comment Reply Ends -->
+                                                    <div class="button">
+                                                        <a href="#"> Reply</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex mb-2 p-4">
+                                                <div class="image mr-3">
+                                                    <a href="#">
+                                                        <img class="img-responsive user-photo"
+                                                            src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5>Azar Hank</h5>
+                                                    <div class="comment-date mb-2">
+                                                        <p class="m-0 text-uppercase"> 12 March, 2021 AT 10:51 </p>
+                                                    </div>
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+                                                        consequuntur repudiandae, ducimus error animi neque
+                                                        recusandae optio tempora non sequi cupiditate ipsum
+                                                        perspiciatis porro maxime praesentium
+                                                        doloribus amet delectus velit.</p>
+                                                    <!-- Comment Reply -->
+                                                    <ul>
+                                                        <li>
+                                                            <div class="comment-reply">
+                                                                <div class="d-flex">
+                                                                    <div class="image mr-3">
+                                                                        <a href="#">
+                                                                            <img class="img-responsive user-photo"
+                                                                                src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <h5>Azar Hank</h5>
+                                                                        <div class="comment-date mb-2">
+                                                                            <p class="m-0 text-uppercase"> 12 March,
+                                                                                2021 AT 10:50 </p>
+                                                                        </div>
+                                                                        <p>Lorem ipsum, dolor sit amet consectetur
+                                                                            adipisicing elit. Sed consequuntur
+                                                                            repudiandae, ducimus error animi neque
+                                                                            recusandae optio tempora non sequi
+                                                                            cupiditate ipsum perspiciatis
+                                                                            porro maxime praesentium doloribus amet
+                                                                            delectus velit.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- Comment Reply Ends -->
+                                                    <div class="button">
+                                                        <a href="#"> Reply</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="filter-content2">
-                                        <div class="card-body">
+                                </div>
+                                <!-- people Comments Ends -->
+                                <div class="col-lg-4 col-12 mx-auto">
+                                    <!-- User Comment -->
+                                    <div class="user-comment py-4 px-3">
+                                        <div class="title mb-3 text-center">
+                                            <h2 class="font-weight-bold mb-2">Add a comment</h2>
+                                        </div>
+                                        <div class="col-12">
                                             <form>
-                                                <label class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-label">
-                                                        Chopsop
-                                                    </span>
-                                                </label>
-                                                <!-- form-check.// -->
-                                                <label class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-label">
-                                                        Den
-                                                    </span>
-                                                </label>
-                                                <!-- form-check.// -->
-                                                <label class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-label">
-                                                        Locus
-                                                    </span>
-                                                </label>
-                                                <!-- form-check.// -->
-                                                <label class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-label">
-                                                        Tangi
-                                                    </span>
-                                                </label>
-                                                <!-- form-check.// -->
-                                                <label class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-label">
-                                                        Erangi
-                                                    </span>
-                                                </label>
-                                                <!-- form-check.// -->
-                                                <label class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <span class="form-check-label">
-                                                        Brand 3
-                                                    </span>
-                                                </label>
-                                                <!-- form-check.// -->
-                                                <div class="collapse show" id="expand2" style="">
-                                                    <!-- form-check.// -->
-                                                    <label class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input" type="checkbox" value="">
-                                                        <span class="form-check-label">
-                                                            Brand 3
-                                                        </span>
-                                                    </label>
-                                                    <!-- form-check.// -->
-                                                    <label class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input" type="checkbox" value="">
-                                                        <span class="form-check-label">
-                                                            Brand 3
-                                                        </span>
-                                                    </label>
-                                                    <label class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input" type="checkbox" value="">
-                                                        <span class="form-check-label">
-                                                            Brand 1
-                                                        </span>
-                                                    </label>
-                                                    <!-- form-check.// -->
-                                                    <label class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input" type="checkbox" value="">
-                                                        <span class="form-check-label">
-                                                            Brand 2
-                                                        </span>
-                                                    </label>
-                                                    <!-- form-check.// -->
-                                                    <label class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input" type="checkbox" value="">
-                                                        <span class="form-check-label">
-                                                            Brand 3
-                                                        </span>
-                                                    </label>
-                                                    <!-- form-check.// -->
-                                                    <!-- form-check.// -->
-                                                    <label class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input" type="checkbox" value="">
-                                                        <span class="form-check-label">
-                                                            Brand 3
-                                                        </span>
-                                                    </label>
+                                                <div class="row">
+                                                    <div class="col-12 my-2">
+                                                        <input type="text" class="form-control rounded-0"
+                                                            placeholder="Name">
+                                                    </div>
+                                                    <div class="col-12 my-2">
+                                                        <input type="email" class="form-control rounded-0"
+                                                            placeholder="Email address">
+                                                    </div>
+                                                    <div class="col-12 my-2">
+                                                        <div class="col-text-area d-flex justify-content-center">
+                                                            <textarea class="w-100 p-3 rounded-0"
+                                                                placeholder="Add Comment"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="d-flex justify-content-center mb-4">
+                                                            <div class="p-ratings">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="button-wrapper mx-auto mb-3">
+                                                        <button class="effect px-4">Send</button>
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
-                                        <!-- card-body.// -->
                                     </div>
-                                    <div class="expand">
-                                        <a data-toggle="collapse" href="#expand2" role="button" aria-expanded="true"
-                                            aria-controls="expand2" class="">View more</a>
-                                    </div>
+                                    <!-- User Comment Ends-->
                                 </div>
-                                <!-- card-group-item.// -->
                             </div>
-                            <!-- Content Ends -->
                         </div>
-                        <!-- Mobile Filter  -->
-                        <!-- Button trigger modal -->
-                        <button type="button" class="effect d-xl-none d-lg-none d-md-block mb-4" data-toggle="modal"
-                            data-target="#leftsidebarfilter">
-                            Product Filter
-                            <span class="ml-2">
-                                <i class="fa fa-list" aria-hidden="true"></i>
-                            </span>
-                        </button>
-                        <!-- Mobile Filter Ends -->
-                    </div>
-                    <div class="col-lg-8 col-12">
-                        <div class="right-side-wrapper products-seller w-100">
-                            <ul class="products">
-                                <li>
-                                    <div class="row py-3 mb-3">
-                                        <div class="col-lg-8 col-md-6 col-sm-12 col-12 post">
-                                            <div class="product-grid-item d-flex align-items-center">
-                                                <div class="product-grid-image">
-                                                    <a href="product-listing.html"> <img
-                                                            src="https://5.imimg.com/data5/NT/DP/MY-4226038/submersible-pump-sets-250x250.jpg"
-                                                            alt="img" class="img-fluid pic-1"> </a>
-                                                    <ul class="social d-flex">
-                                                        <li>
-                                                            <a href="" class="fa fa-shopping-bag"></a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="fa fa-heart" onclick="successMsg();"></a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- <span class="product-discount-label">-20%</span> -->
-                                                </div>
-                                                <div class="product-content ml-3">
-                                                    <a href="#" class="title">White Toilet Paper Bathroom Roll
-                                                        Classic</a>
-                                                    <div class="price mb-1"> <span class="font-weight-bold">Npr
-                                                            150</span>
-                                                        /packet
-                                                    </div>
-                                                    <ul class="other-detail">
-                                                        <li>Brand: <span>Abc</span> </li>
-                                                        <li>Category: <span> White or as per customer requirement
-                                                            </span> </li>
-                                                        <li>Weight: <span>Abc</span> </li>
-                                                        <li>Type: <span>Hotel, Home, Hospital, Restaurant</span> </li>
-                                                    </ul>
-                                                    <div class="enterprise mb-2">Sold by: <span
-                                                            class="font-weight-bold">Shah
-                                                            Enterprise</span>
-                                                    </div>
-                                                    <a href="" class="anchor-btn2 mb-3">View</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 seller-info">
-                                            <div class="seller-info-box p-4">
-                                                <div class="sold-by position-relative">
-                                                    <div class="position-absolute medal-badge">
-                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                            xml:space="preserve" viewBox="0 0 287.5 442.2">
-                                                            <polygon style="fill:#F8B517;"
-                                                                points="223.4,442.2 143.8,376.7 64.1,442.2 64.1,215.3 223.4,215.3 ">
-                                                            </polygon>
-                                                            <circle style="fill:#FBD303;" cx="143.8" cy="143.8"
-                                                                r="143.8">
-                                                            </circle>
-                                                            <circle style="fill:#F8B517;" cx="143.8" cy="143.8"
-                                                                r="93.6">
-                                                            </circle>
-                                                            <polygon style="fill:#FCFCFD;" points="143.8,55.9 163.4,116.6 227.5,116.6 175.6,154.3 195.6,215.3 143.8,177.7 91.9,215.3 111.9,154.3
-                                                                                            60,116.6 124.1,116.6 ">
-                                                            </polygon>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="title font-weight-bold">Sold By</div>
-                                                    <a href="" class="name d-block font-weight-bold">
-                                                        Shah Enterprise
-                                                        <span class="ml-2"><i class="fa fa-check-circle"
-                                                                style="color:green"></i></span>
-                                                    </a>
-                                                    <div class="rating text-center d-block">
-                                                        <span class="star-rating star-rating-sm d-block">
-                                                            <i class="fa fa-star text-secondary"></i><i
-                                                                class="fa fa-star text-secondary"></i><i
-                                                                class="fa fa-star text-secondary"></i><i
-                                                                class="fa fa-star text-secondary"></i><i
-                                                                class="fa fa-star text-secondary"></i>
-                                                        </span>
-                                                        <span class="rating-count d-block ml-0">(0 customer
-                                                            reviews)</span>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center align-items-center">
-                                                    <a href="" class="anchor-btn2 mt-2">Visit Store</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row py-3 mb-3">
-                                        <div class="col-lg-8 col-md-6 col-sm-12 col-12 post">
-                                            <div class="product-grid-item d-flex align-items-center">
-                                                <div class="product-grid-image">
-                                                    <a href="product-listing.html"> <img
-                                                            src="https://5.imimg.com/data5/NT/DP/MY-4226038/submersible-pump-sets-250x250.jpg"
-                                                            alt="img" class="img-fluid pic-1"> </a>
-                                                    <ul class="social d-flex">
-                                                        <li>
-                                                            <a href="" class="fa fa-shopping-bag"></a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="fa fa-heart" onclick="successMsg();"></a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- <span class="product-discount-label">-20%</span> -->
-                                                </div>
-                                                <div class="product-content ml-3">
-                                                    <a href="#" class="title">Orchids White Tissue Paper Jumbo Roll</a>
-                                                    <div class="price mb-1"> <span class="font-weight-bold">Npr
-                                                            150</span>
-                                                        /packet
-                                                    </div>
-                                                    <ul class="other-detail">
-                                                        <li>Brand: <span>Abc</span> </li>
-                                                        <li>Category: <span> White or as per customer requirement
-                                                            </span> </li>
-                                                        <li>Weight: <span>Abc</span> </li>
-                                                        <li>Type: <span>Hotel, Home, Hospital, Restaurant</span> </li>
-                                                    </ul>
-                                                    <div class="enterprise mb-2">Sold by: <span
-                                                            class="font-weight-bold">Joseph
-                                                            Limited</span>
-                                                    </div>
-                                                    <a href="" class="anchor-btn2 mb-3">View</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 seller-info">
-                                            <div class="seller-info-box p-4">
-                                                <div class="sold-by position-relative">
-                                                    <div class="position-absolute medal-badge">
-                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                            xml:space="preserve" viewBox="0 0 287.5 442.2">
-                                                            <polygon style="fill:#F8B517;"
-                                                                points="223.4,442.2 143.8,376.7 64.1,442.2 64.1,215.3 223.4,215.3 ">
-                                                            </polygon>
-                                                            <circle style="fill:#FBD303;" cx="143.8" cy="143.8"
-                                                                r="143.8">
-                                                            </circle>
-                                                            <circle style="fill:#F8B517;" cx="143.8" cy="143.8"
-                                                                r="93.6">
-                                                            </circle>
-                                                            <polygon style="fill:#FCFCFD;" points="143.8,55.9 163.4,116.6 227.5,116.6 175.6,154.3 195.6,215.3 143.8,177.7 91.9,215.3 111.9,154.3
-                                                                                            60,116.6 124.1,116.6 ">
-                                                            </polygon>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="title font-weight-bold">Sold By</div>
-                                                    <a href="" class="name d-block font-weight-bold">
-                                                        Joseph Limited
-                                                        <span class="ml-2"><i class="fa fa-check-circle"
-                                                                style="color:green"></i></span>
-                                                    </a>
-                                                    <div class="rating text-center d-block">
-                                                        <span class="star-rating star-rating-sm d-block">
-                                                            <i class="fa fa-star text-secondary"></i><i
-                                                                class="fa fa-star text-secondary"></i><i
-                                                                class="fa fa-star text-secondary"></i><i
-                                                                class="fa fa-star text-secondary"></i><i
-                                                                class="fa fa-star text-secondary"></i>
-                                                        </span>
-                                                        <span class="rating-count d-block ml-0">(0 customer
-                                                            reviews)</span>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center align-items-center">
-                                                    <a href="" class="anchor-btn2 mt-2">Visit Store</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 mx-auto text-center">
-                            <button type="button" class="effect mx-auto mt-4">View More</button>
+                        <div class="tab-pane fade p-3" id="third" role="tabpanel" aria-labelledby="third-tab">
+                            <div class="table-responsive mt-4">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatibus porro,
+                                    accusamus explicabo fugit autem ad? Molestias repellendus, nemo facere quis tempore
+                                    ullam, voluptas suscipit aliquid vel natus qui. Eligendi.</p>
+                                <table class="table">
+
+                                    <tbody>
+                                        <tr>
+                                            <th>Brand Name</th>
+                                            <td>Shah Enterprise</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Annual Turnover</th>
+                                            <td>Rs. 99 - 100 Crore</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Number of Employees</th>
+                                            <td>51 to 100 employees</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-12">
-                        <div class="sidebar mb-5">
-                            <div class="popular-post">
-                                <div class="title position-relative bg-light p-3">
-                                    <h6 class="title m-0">Other Products </h6>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Product Listing -->
+    <section id="product-listing-wrapper" class="position-relative py-5">
+        <div class="container">
+            <div class="product-lists">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading d-flex justify-content-between align-items-center flex-wrap">
+                            <div class="head">
+                                <h4 class="font-weight-bold">
+                                    Featured Products</h4>
+                                <!-- <p class="m-0">THERE'S SOMETHING FOR EVERYONE</p> -->
+                            </div>
+                            <div class="navigator"> <a href="">See all</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slider-listing">
+                    <div class="slick-item position-relative py-4">
+                        <div class="product-grid-item">
+                            <div class="product-grid-image">
+                                <a href="product-listing.html"> <img
+                                        src="https://5.imimg.com/data5/NT/DP/MY-4226038/submersible-pump-sets-250x250.jpg"
+                                        alt="img" class="img-fluid pic-1"> </a>
+                                <!-- <ul class="social">
+                                    <li>
+                                        <a href="" class="fa fa-shopping-bag"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-heart" onclick="successMsg();"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="fa fa-exchange"></a>
+                                    </li>
+                                </ul> <span class="product-discount-label">-20%</span> -->
+                            </div>
+                            <div class="product-content mx-auto text-center">
+                                <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
+                                <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                <div class="enterprise text-center mb-2">Sold by: <span class="font-weight-bold">Shah
+                                        Enterprise</span>
                                 </div>
-                                <ul>
+                                <a href="" class="anchor-btn2 mb-3">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-item position-relative py-4">
+                        <div class="product-grid-item">
+                            <div class="product-grid-image">
+                                <a href="product-listing.html"> <img
+                                        src="https://5.imimg.com/data5/GE/KQ/MY-1456501/submersible-pump-set-250x250.jpg"
+                                        alt="img" class="img-fluid pic-1"> </a>
+                                <!-- <ul class="social">
                                     <li>
-                                        <div class="d-flex align-items-center px-3">
-                                            <div class="post-image mr-2 w-xl-25 w-md-0">
-                                                <img src="frontend/assets/images/product-images/1.jpg"
-                                                    class="img-fluid ">
-                                            </div>
-                                            <div class="post-content w-75">
-                                                <div class="post-title">
-                                                    <a href="program-details.html">
-                                                        Market is Changing
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="" class="fa fa-shopping-bag"></a>
                                     </li>
                                     <li>
-                                        <div class="d-flex align-items-center px-3">
-                                            <div class="post-image mr-2 w-xl-25 w-md-0">
-                                                <img src="frontend/assets/images/product-images/1.jpg"
-                                                    class="img-fluid ">
-                                            </div>
-                                            <div class="post-content w-75">
-                                                <div class="post-title">
-                                                    <a href="program-details.html">
-                                                        Market is Changing
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a class="fa fa-heart" onclick="successMsg();"></a>
                                     </li>
-                                </ul>
+                                    <li>
+                                        <a href="" class="fa fa-exchange"></a>
+                                    </li>
+                                </ul> <span class="product-discount-label">-20%</span> -->
+                            </div>
+                            <div class="product-content mx-auto text-center">
+                                <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
+                                <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                <div class="enterprise text-center mb-2">Sold by: <span class="font-weight-bold">Shah
+                                        Enterprise</span>
+                                </div>
+                                <a href="" class="anchor-btn2 mb-3">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-item position-relative py-4">
+                        <div class="product-grid-item">
+                            <div class="product-grid-image">
+                                <a href="product-listing.html"> <img
+                                        src="https://5.imimg.com/data5/JI/KG/HS/SELLER-3087351/0v1a3508-125x125.JPG"
+                                        alt="img" class="img-fluid pic-1"> </a>
+                                <!-- <ul class="social">
+                                    <li>
+                                        <a href="" class="fa fa-shopping-bag"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-heart" onclick="successMsg();"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="fa fa-exchange"></a>
+                                    </li>
+                                </ul> <span class="product-discount-label">-20%</span> -->
+                            </div>
+                            <div class="product-content mx-auto text-center">
+                                <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
+                                <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                <div class="enterprise text-center mb-2">Sold by: <span class="font-weight-bold">Shah
+                                        Enterprise</span>
+                                </div>
+                                <a href="" class="anchor-btn2 mb-3">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-item position-relative py-4">
+                        <div class="product-grid-item">
+                            <div class="product-grid-image">
+                                <a href="product-listing.html"> <img
+                                        src="https://5.imimg.com/data5/JO/JT/LI/SELLER-675662/honeywell-ff2100-ffp1s-mask-125x125.jpg"
+                                        alt="img" class="img-fluid pic-1"> </a>
+                                <!-- <ul class="social">
+                                    <li>
+                                        <a href="" class="fa fa-shopping-bag"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-heart" onclick="successMsg();"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="fa fa-exchange"></a>
+                                    </li>
+                                </ul> <span class="product-discount-label">-20%</span> -->
+                            </div>
+                            <div class="product-content mx-auto text-center">
+                                <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
+                                <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                <div class="enterprise text-center mb-2">Sold by: <span class="font-weight-bold">Shah
+                                        Enterprise</span>
+                                </div>
+                                <a href="" class="anchor-btn2 mb-3">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-item position-relative py-4">
+                        <div class="product-grid-item">
+                            <div class="product-grid-image">
+                                <a href="product-listing.html"> <img src="frontend/assets/images/product-images/9.jpg"
+                                        alt="img" class="img-fluid pic-1"> </a>
+                                <!-- <ul class="social">
+                                    <li>
+                                        <a href="" class="fa fa-shopping-bag"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-heart" onclick="successMsg();"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="fa fa-exchange"></a>
+                                    </li>
+                                </ul> <span class="product-discount-label">-20%</span> -->
+                            </div>
+                            <div class="product-content mx-auto text-center">
+                                <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
+                                <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                <div class="enterprise text-center mb-2">Sold by: <span class="font-weight-bold">Shah
+                                        Enterprise</span>
+                                </div>
+                                <a href="" class="anchor-btn2 mb-3">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-item position-relative py-4">
+                        <div class="product-grid-item">
+                            <div class="product-grid-image">
+                                <a href="product-listing.html"> <img src="frontend/assets/images/product-images/9.jpg"
+                                        alt="img" class="img-fluid pic-1"> </a>
+                                <!-- <ul class="social">
+                                    <li>
+                                        <a href="" class="fa fa-shopping-bag"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-heart" onclick="successMsg();"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="fa fa-exchange"></a>
+                                    </li>
+                                </ul> <span class="product-discount-label">-20%</span> -->
+                            </div>
+                            <div class="product-content mx-auto text-center">
+                                <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
+                                <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                <div class="enterprise text-center mb-2">Sold by: <span class="font-weight-bold">Shah
+                                        Enterprise</span>
+                                </div>
+                                <a href="" class="anchor-btn2 mb-3">View</a>
                             </div>
                         </div>
                     </div>
@@ -510,6 +690,7 @@
             </div>
         </div>
     </section>
+    <!-- Product Listing Ends - ->
     <!-- Scroll Button -->
     <section id="scroll-btn">
         <a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
