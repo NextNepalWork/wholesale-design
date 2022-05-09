@@ -135,34 +135,50 @@ $('.slick-slider-listing').slick({
         {
             breakpoint: 1080,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1
             }
         },
         {
             breakpoint: 780,
             settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+// Product Listing Slick Slider Ends
+// Product Listing Slick Slider Starts
+$('.slick-slider-listing2').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    responsive: [{
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 1080,
+            settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 780,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                dots: true
+                slidesToShow: 2,
+                slidesToScroll: 1
             }
         },
         {
             breakpoint: 480,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                dots: true
-            }
-        }, {
-            breakpoint: 325,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -225,7 +241,7 @@ $(document).ready(function () {
 // Delivery info search start
 //https://codepen.io/saravanajd/pen/GGPQbY?editors=0010
 function create_custom_dropdowns() {
-    $("select").each(function (i, select) {
+    $("#select_box").each(function (i, select) {
         if (!$(this).next().hasClass("dropdown-select")) {
             $(this).after(
                 '<div class="dropdown-select wide ' +

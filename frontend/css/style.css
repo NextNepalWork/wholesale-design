@@ -33,13 +33,13 @@ a:hover {
     color: var(--red);
 }
 
-.slick-prev {
-    left: -20px !important;
+/* .slick-prev {
+    left: -20px !important; 
 }
 
 .slick-next {
     right: -30px !important;
-}
+} */
 
 button {
     color: white;
@@ -85,9 +85,9 @@ button.effect:hover:before {
 }
 
 .anchor-btn2:hover {
-    color: var(--red);
+    color: #000;
     transition: .5s;
-    border: 2px solid var(--red);
+    border: 2px solid #000;
 }
 
 .anchor-btn {
@@ -133,12 +133,12 @@ button:focus {
 
 :root {
     --body-color: #ffffff;
-    --main-color: #1a264e;
+    --main-color: #11C2CC;
     --second-color: #ffebcd;
     --third-color: #efeae0;
     --green: #efeae0;
     --light: #ddf6ff6b;
-    --red: #FF6A00;
+    --red: #41B54A;
     --dark-blue: #2d3448;
     --sub-head: #9c9c9c;
 }
@@ -209,7 +209,7 @@ sup {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 5px;
 }
 
 /* Track */
@@ -247,8 +247,27 @@ sup {
     left: 0;
 }
 
-.mobile-profile-nav {
-    /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
+
+/* #scroll-btn a {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    z-index: 8;
+} */
+
+#mobile-navigation {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    padding: 15px 0px;
+    z-index: 5;
+
+    top: 0;
 }
 
 #profilemobilenav .modal-dialog {
@@ -287,12 +306,12 @@ sup {
 /* Global Css Ends */
 /* Top Header Navigation */
 #top-header-navigation-wrapper {
-    background-color: var(--main-color);
+    background-color: white;
 }
 
 #top-header-navigation-wrapper ul li a {
     font-size: 12px;
-    color: #fff;
+    color: #000;
 }
 
 /* Top Header Navigation Ends */
@@ -1189,7 +1208,7 @@ button.slick-prev {
 /* Popup Search Modal Ends*/
 /* Footer Starts */
 #footer-wrapper {
-    background-color: var(--main-color);
+    background-color: #00817c;
     color: white;
 }
 
@@ -1232,7 +1251,7 @@ button.slick-prev {
 
 #footer-wrapper .heading h2 {
     font-size: 18px;
-    color: var(--red);
+    color: var(--main-color);
 }
 
 /* Footer Ends */
@@ -1279,30 +1298,8 @@ button.slick-prev {
 /* Nav Cart Popup Ends */
 /* Index Page Ends */
 /* Product Listing */
-#breadcrumb-wrapper .image img {
-    max-height: 250px;
-    min-height: 250px;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-}
-
-#breadcrumb-wrapper .overlay {
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(140 140 140 / 43%);
-}
-
-#breadcrumb-wrapper .overlay .title {
-    top: 50%;
-    left: 10%;
-    transform: translate(-10%, -50%);
-    position: absolute;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.438);
+#breadcrumb ol li a {
+    font-size: 1rem;
 }
 
 #product-listing-page .left-side-wrapper {
@@ -1658,8 +1655,8 @@ a.btn:hover {
 
 /* Swiper Slider */
 .zoom {
-    width: 50%;
-    height: 300px;
+    width: 60%;
+    height: 400px;
     left: 100%;
     top: 0;
     position: absolute;
@@ -1858,7 +1855,7 @@ table th {
 /* Mobile Menu */
 .mobile-menu {
     right: -8px;
-    color: var(--third-color);
+    color: var(--main-color);
 }
 
 #rightsidebarfilter .modal-dialog {
@@ -2264,9 +2261,6 @@ table .cart-image {
     overflow-x: scroll;
 }
 
-.dashboard-content .table {
-    width: 990px;
-}
 
 .dashboard-content .table td,
 .dashboard-content .table th {
@@ -2437,6 +2431,19 @@ table .cart-image {
     margin-bottom: -7px;
 }
 
+#contact-us-wrapper .contact-us-heading {
+    color: var(--main-color);
+}
+
+#contact-us-wrapper .address-info i {
+    color: var(--main-color);
+    font-size: 1.1rem;
+}
+
+#contact-us-wrapper .contact-info {
+    text-align: center;
+}
+
 /* Contact Us Ends */
 /* About Us  */
 #about-us-wrapper h2 {
@@ -2451,8 +2458,8 @@ table .cart-image {
 }
 
 #about-us-wrapper .about-us-image img {
-    max-height: 300px;
-    min-height: 300px;
+    max-height: 400px;
+    min-height: 400px;
     object-fit: cover;
     object-position: center;
     width: 100%;
@@ -3065,9 +3072,8 @@ h6.active-item {
 
 #cart_user input#defaultUnchecked {
     position: absolute;
-    top: 54%;
-    left: 4%;
-    transform: translate(5%, -60%);
+    top: 44%;
+    left: 3%;
 }
 
 #cart_user .delivery_info_img img {
@@ -3081,9 +3087,8 @@ h6.active-item {
 
 #cart_user input#defaultUnchecke {
     position: absolute;
-    top: 52%;
-    left: 5%;
-    transform: translate(-4%, -50%);
+    top: 44%;
+    left: 3%;
 }
 
 /*************************** search select start  */
@@ -3357,3 +3362,90 @@ h6.active-item {
 }
 
 /* Shopping Carts and Checkout Process Ends*/
+
+/* Login Page */
+
+#login-register-wrapper {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#login-register-wrapper a {
+    text-decoration: none;
+    color: var(--red_light);
+    font-size: 0.8rem;
+}
+
+#login-register-wrapper .custom-font-size {
+    font-size: 0.9rem;
+}
+
+/* #login-register-wrapper {
+    background-image: url(../images/banner/1.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+#login-register-wrapper i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-color);
+}
+
+#login-register-wrapper form {
+    box-shadow: rgb(0 0 0 / 20%) -20px 36px 30px -7px;
+    /* box-shadow: rgb(0 0 0 / 20%) -20px 10px 20px 0px; */
+    /* box-shadow: rgb(0 0 0 / 20%) -60px -15px 60px -40px; */
+    /* border: 4px solid var(--theme_color); */
+    border-radius: 8px;
+    transition: .5s;
+    background-color: white;
+}
+
+
+/* #login-register-wrapper form:hover {
+    box-shadow: rgb(0 0 0 / 20%) -60px -15px 60px -40px;
+    border-radius: 8px;
+    transition: .5s;
+    transform: translate(-20px);
+} */
+
+#login-register-wrapper .social-media a {
+    color: white;
+    background-color: var(--main-color);
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    border-radius: 4px;
+    line-height: 2;
+}
+
+#login-register-wrapper .title {
+    color: var(--main-color);
+}
+
+#login-register-wrapper form input::placeholder {
+    font-size: 0.75rem;
+}
+
+
+/* Login Page Ends */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    background-image: url("../assets/images/preloader.gif");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100;
+}
+
+#loading div img {
+    max-height: 90px;
+    min-height: 90px;
+    object-fit: contain;
+    object-position: center;
+}

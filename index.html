@@ -38,7 +38,11 @@
 </head>
 
 <body onload="myFunction()">
-    <div id="loading"></div>
+    <div id="loading">
+        <div class="d-flex justify-content-center align-items-center h-75"> <img
+                src="frontend/assets/images/comingsoon.png" alt="">
+        </div>
+    </div>
     <!-- Whole Body Wrapper Starts -->
     <section id="index-wrapper">
         <!-- Top Header Navigation -->
@@ -50,7 +54,7 @@
                             <img src="frontend/assets/images/comingsoon.png" alt="navigation-logo" class="img-fluid">
                         </a>
                     </div>
-                    <ul class="d-flex justify-content-end align-items-center m-0">
+                    <ul class="d-lg-flex d-none justify-content-end align-items-center m-0">
                         <li>
                             <a class="nav-link" href="login-register.html">
                                 <span class=" mr-2">
@@ -89,68 +93,82 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="d-lg-none d-flex justify-content-end align-items-center">
+                        <!-- Mobile Popup Search Modal Anchor -->
+                        <a class="btn d-xl-none d-lg-none d-md-block search-button" data-toggle="modal"
+                            data-target="#searchpopupmodal">
+                            <i class="fa fa-search text-white"></i>
+                        </a>
+                        <!-- Mobile Popup Search Modal Anchor Ends -->
+                        <!-- Button trigger modal -->
+                        <div class="mobile-menu d-lg-none d-md-block mr-4 position-absolute" data-toggle="modal"
+                            data-target="#rightsidebarfilter">
+                            <span class="mr-2">
+                                <i class="fa fa-bars fa-2x" aria-hidden="true">
+                                </i>
+                            </span>
+                        </div>
+                        <!-- Button trigger modal -->
+                    </div>
                 </div>
             </div>
         </header>
         <!-- Top Header Navigation Ends -->
         <!-- Banner Categories Slider -->
         <section id="banner-categories-wrapper" class="position-relative">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-                    <div class="banner-search">
-                        <div class="banner-item position-relative">
-                            <img src="frontend/assets/images/banner/1.jpg" class="img-fluid w-100">
-                            <div class="description text-center text-capitalize">
-                                <h4>Search for products & find verified sellers near you</h4>
-                                <div class="card">
-                                    <input type="text" placeholder="Enter products name">
-                                    <div class="card-footer">
-                                        <ul class="search-list-wrapper w-100">
-                                            <li class="mb-2 p-1">
-                                                <a href="product-detail.html">
-                                                    <div class="row">
-                                                        <div class="col-3">
-                                                            <div class="image"> <img
-                                                                    src="frontend/assets/images/product-images/1.jpg"
-                                                                    alt="search-list-image" class="img-fluid"></div>
-                                                        </div>
-                                                        <div class="col-9 m-auto">
-                                                            <p class="m-0 text-left">Ham Cheese Burger</p>
-                                                        </div>
+            <div class="banner-search">
+                <div class="banner-item position-relative">
+                    <img src="frontend/assets/images/banner/1.jpg" class="img-fluid w-100">
+                    <div class="description text-center text-capitalize">
+                        <h4>Search for products & find verified sellers near you</h4>
+                        <div class="card">
+                            <input type="text" placeholder="Enter products name">
+                            <div class="card-footer">
+                                <ul class="search-list-wrapper w-100">
+                                    <li class="mb-2 p-1">
+                                        <a href="product-detail.html">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="image"> <img
+                                                            src="frontend/assets/images/product-images/1.jpg"
+                                                            alt="search-list-image" class="img-fluid"></div>
+                                                </div>
+                                                <div class="col-9 m-auto">
+                                                    <p class="m-0 text-left">Ham Cheese Burger</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2 p-1">
+                                        <a href="product-detail.html">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="image"> <img
+                                                            src="frontend/assets/images/product-images/1.jpg"
+                                                            alt="search-list-image" class="img-fluid"></div>
+                                                </div>
+                                                <div class="col-9 m-auto">
+                                                    <p class="m-0 text-left">Ham Cheese Burger</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2 p-1">
+                                        <a href="product-detail.html">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="image"> <img
+                                                            src="frontend/assets/images/product-images/1.jpg"
+                                                            alt="search-list-image" class="img-fluid">
                                                     </div>
-                                                </a>
-                                            </li>
-                                            <li class="mb-2 p-1">
-                                                <a href="product-detail.html">
-                                                    <div class="row">
-                                                        <div class="col-3">
-                                                            <div class="image"> <img
-                                                                    src="frontend/assets/images/product-images/1.jpg"
-                                                                    alt="search-list-image" class="img-fluid"></div>
-                                                        </div>
-                                                        <div class="col-9 m-auto">
-                                                            <p class="m-0 text-left">Ham Cheese Burger</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="mb-2 p-1">
-                                                <a href="product-detail.html">
-                                                    <div class="row">
-                                                        <div class="col-3">
-                                                            <div class="image"> <img
-                                                                    src="frontend/assets/images/product-images/1.jpg"
-                                                                    alt="search-list-image" class="img-fluid"></div>
-                                                        </div>
-                                                        <div class="col-9 m-auto">
-                                                            <p class="m-0 text-left">Ham Cheese Burger</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                                </div>
+                                                <div class="col-9 m-auto">
+                                                    <p class="m-0 text-left">Ham Cheese Burger</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -161,11 +179,6 @@
         <!-- Navigation Starts -->
         <section id="navigation-wrapper" class="navigation-wrap">
             <nav class="navbar header-sticky px-3">
-                <!-- <div class="image">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="frontend/assets/images/logo/3.png" alt="navigation-logo" class="img-fluid">
-                    </a>
-                </div> -->
                 <div class="navbar-menus d-xl-block d-lg-block d-none w-100" id="navbarmain">
                     <ul class="navbar-nav py-4 py-md-0 d-flex flex-row flex-wrap justify-content-center role=" menu">
                         <li class="nav-item">
@@ -189,7 +202,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -233,7 +245,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -277,7 +288,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -321,7 +331,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -356,8 +365,6 @@
                                             </li>
                                         </ul>
                                     </div>
-
-
                                 </div>
                             </div>
                         </li>
@@ -382,7 +389,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -426,7 +432,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -470,7 +475,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -514,7 +518,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -549,8 +552,6 @@
                                             </li>
                                         </ul>
                                     </div>
-
-
                                 </div>
                             </div>
                         </li>
@@ -575,7 +576,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -619,7 +619,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -663,7 +662,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -707,7 +705,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -742,8 +739,6 @@
                                             </li>
                                         </ul>
                                     </div>
-
-
                                 </div>
                             </div>
                         </li>
@@ -768,7 +763,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -812,7 +806,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -856,7 +849,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -900,7 +892,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -935,8 +926,6 @@
                                             </li>
                                         </ul>
                                     </div>
-
-
                                 </div>
                             </div>
                         </li>
@@ -961,7 +950,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -1005,7 +993,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -1049,7 +1036,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -1093,7 +1079,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -1128,8 +1113,6 @@
                                             </li>
                                         </ul>
                                     </div>
-
-
                                 </div>
                             </div>
                         </li>
@@ -1154,7 +1137,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -1198,7 +1180,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -1242,7 +1223,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -1286,7 +1266,6 @@
                                             </li>
                                             <li class="nav-item p-0">
                                                 <a class="nav-link" href="product-listing.html">Pharmaceutical Tablets
-
                                                 </a>
                                             </li>
                                             <li class="nav-item p-0">
@@ -1321,8 +1300,6 @@
                                             </li>
                                         </ul>
                                     </div>
-
-
                                 </div>
                             </div>
                         </li>
@@ -1348,43 +1325,13 @@
                         <!-- Popup Search Modal Anchor Ends -->
                     </ul>
                 </div>
-                <!-- <div class="cart-wishlist desk-nav d-xl-block d-lg-block d-none">
-                    <ul class="d-flex align-items-center justify-content-between m-0">
-                        <li>
-                            <a class="nav-link add-on px-xl-2 px-lg-1 px-md-2 px-2" data-toggle="modal"
-                                data-target="#nav-cart">
-                                <span class="mr-1"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span> <sup
-                                    class="cart-items text-white">2</sup>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link add-on px-xl-2 px-lg-1 px-md-2 px-2" data-toggle="modal"
-                                data-target="#nav-cart">
-                                <span class="mr-1"><i class="fa fa-heart-o" aria-hidden="true"></i></span> <sup
-                                    class="cart-items text-white">2</sup>
-                            </a>
-                        </li>
-                    </ul>
-                </div> -->
-                <!-- Mobile Popup Search Modal Anchor -->
-                <a class="btn d-xl-none d-lg-none d-md-block search-button" data-toggle="modal"
-                    data-target="#searchpopupmodal"><i class="fa fa-search"></i></a>
-                <!-- Mobile Popup Search Modal Anchor Ends -->
-                <!-- Small Desktop & mobile Cart-wishlist and Profile -->
-                <!-- Button trigger modal -->
-                <div class="mobile-menu d-lg-none d-md-block mr-4 position-absolute" data-toggle="modal"
-                    data-target="#rightsidebarfilter"><span class="mr-2"><i class="fa fa-bars fa-2x"
-                            aria-hidden="true"></i></span>
-                </div>
-                <!-- Button trigger modal -->
-                <!-- Small Desktop & mobile Cart-wishlist and Profile End-->
             </nav>
         </section>
         <!-- Navigation Ends -->
         <!-- Product Listing -->
         <section class="product-listing position-relative py-5 bg-light">
             <div class="container">
-                <div class="product-lists bg-white px-4 py-4">
+                <div class="product-lists">
                     <div class="row">
                         <div class="col-12">
                             <div class="heading d-flex justify-content-between align-items-center flex-wrap">
@@ -1702,7 +1649,7 @@
                 </div>
             </div>
         </section>
-        <section class="product-listing position-relative pt-5">
+        <section class="product-listing position-relative pt-5 bg-white">
             <div class="container">
                 <div class="product-lists">
                     <div class="row">
@@ -2039,14 +1986,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-12 mb-2">
                         <div class="image">
                             <a href="product-listing.html">
                                 <img src="frontend/assets/images/a.jpg" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-12 mb-2">
                         <div class="image">
                             <a href="product-listing.html">
                                 <img src="frontend/assets/images/b.jpg" alt="">
@@ -2142,9 +2089,9 @@
         </section> -->
         <!-- Testimonial Ends -->
         <!-- Product Listing -->
-        <section class="product-listing position-relative py-5">
+        <section class="product-listing position-relative py-5 bg-white ">
             <div class="container">
-                <div class="product-lists bg-white px-4 py-4">
+                <div class="product-lists">
                     <div class="row">
                         <div class="col-12">
                             <div class="heading d-flex justify-content-between align-items-center flex-wrap">
@@ -2889,7 +2836,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slick-slider-listing">
+                    <div class="slick-slider-listing2">
                         <div class="slick-item position-relative py-4">
                             <div class="product-grid-item">
                                 <div class="product-grid-image">
@@ -2910,7 +2857,7 @@
                                 </div>
                                 <div class="product-content mx-auto text-center">
                                     <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
-                                    <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                    <div class="price text-center mb-1"> £ 8.00 </div>
                                     <div class="enterprise text-center mb-2">Sold by: <span
                                             class="font-weight-bold">Shah Enterprise</span>
                                     </div>
@@ -2938,7 +2885,7 @@
                                 </div>
                                 <div class="product-content mx-auto text-center">
                                     <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
-                                    <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                    <div class="price text-center mb-1"> £ 8.00 </div>
                                     <div class="enterprise text-center mb-2">Sold by: <span
                                             class="font-weight-bold">Shah Enterprise</span>
                                     </div>
@@ -2966,7 +2913,7 @@
                                 </div>
                                 <div class="product-content mx-auto text-center">
                                     <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
-                                    <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                    <div class="price text-center mb-1"> £ 8.00 </div>
                                     <div class="enterprise text-center mb-2">Sold by: <span
                                             class="font-weight-bold">Shah Enterprise</span>
                                     </div>
@@ -2994,7 +2941,7 @@
                                 </div>
                                 <div class="product-content mx-auto text-center">
                                     <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
-                                    <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                    <div class="price text-center mb-1"> £ 8.00 </div>
                                     <div class="enterprise text-center mb-2">Sold by: <span
                                             class="font-weight-bold">Shah Enterprise</span>
                                     </div>
@@ -3022,7 +2969,7 @@
                                 </div>
                                 <div class="product-content mx-auto text-center">
                                     <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
-                                    <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                    <div class="price text-center mb-1"> £ 8.00 </div>
                                     <div class="enterprise text-center mb-2">Sold by: <span
                                             class="font-weight-bold">Shah Enterprise</span>
                                     </div>
@@ -3050,7 +2997,7 @@
                                 </div>
                                 <div class="product-content mx-auto text-center">
                                     <h3 class="title text-center"> <a href="#" class="">Saftey Essentials </a></h3>
-                                    <div class="price text-center mb-1"> £ 8.00 <span>£ 10.00</span> </div>
+                                    <div class="price text-center mb-1"> £ 8.00 </div>
                                     <div class="enterprise text-center mb-2">Sold by: <span
                                             class="font-weight-bold">Shah Enterprise</span>
                                     </div>
@@ -3114,7 +3061,7 @@
                                 </div>
                             </div>
                             <li>
-                                <a href=" mailto:webmaster@example.com"><span class="mr-2"><i class="fa fa-angle-right"
+                                <a href=""><span class="mr-2"><i class="fa fa-angle-right"
                                             aria-hidden="true"></i></span>Home</a>
                                 </h5>
                             </li>
@@ -3157,10 +3104,10 @@
         </section>
         <!-- Footer Ends -->
         <!-- Copyright -->
-        <section id="copyright">
+        <section id="copyright" class="py-2">
             <div class="container">
-                <div class="row justify-content-center">
-                    <p class="m-0">Copyright © 2022 Wholesale Lobby. All rights reserved.</p>
+                <div class="row justify-content-center mx-2">
+                    <p class="m-0 text-center">Copyright © 2022 Wholesale Lobby. All rights reserved.</p>
                 </div>
             </div>
         </section>
@@ -3579,8 +3526,8 @@
                     <div class="cart-wishlist">
                         <div class="image">
                             <a class="navbar-brand" href="index.html">
-                                <img src="frontend/assets/images/logo/3.png" alt="navigation-logo" class="img-fluid">
-                                <!-- <h2 class="m-0 font-weight-bold"><span>Upachar</span> Pharmacy !</h2> -->
+                                <img src="frontend/assets/images/comingsoon.png" alt="navigation-logo"
+                                    class="img-fluid">
                             </a>
                         </div>
                     </div>
@@ -3595,18 +3542,23 @@
                         </li>
                         <li class="nav-item d-flex align-items-center">
                             <a class="nav-link add-on" data-toggle="modal" data-target="#nav-cart">
-                                <span class="nav-indication mr-2"><i class="fa fa-eercast"
-                                        aria-hidden="true"></i></span>My Cart <span class="mx-2"><i
-                                        class="fa fa-shopping-bag" aria-hidden="true"></i></span> <sup class="cart-items >2</sup>
+                                <span class="nav-indication mr-2">
+                                    <i class="fa fa-eercast" aria-hidden="true"></i>
+                                </span>
+                                My Cart
+                                <span class="mx-2">
+                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                </span>
+                                <sup class="cart-items text-white">2</sup>
                             </a>
                         </li>
                         <li class=" nav-item d-flex align-items-center">
-                                    <a class="nav-link add-on" data-toggle="modal" data-target="#nav-cart">
-                                        <span class="nav-indication mr-2"><i class="fa fa-eercast"
-                                                aria-hidden="true"></i></span>Wishlist <span class="mx-2"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></span> <sup
-                                            class="cart-items text-white">2</sup>
-                                    </a>
+                            <a class="nav-link add-on" data-toggle="modal" data-target="#nav-cart">
+                                <span class="nav-indication mr-2"><i class="fa fa-eercast"
+                                        aria-hidden="true"></i></span>Wishlist <span class="mx-2"><i
+                                        class="fa fa-heart-o" aria-hidden="true"></i></span> <sup
+                                    class="cart-items text-white">2</sup>
+                            </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
@@ -4023,9 +3975,9 @@
                     </ul>
                 </div>
                 <div class="modal-footer py-3">
-                    <a class="w-50 text-center" href="under-construction.html"> <span class="mr-2"><i
+                    <a class="w-50 text-center text-white href=" under-construction.html"> <span class="mr-2"><i
                                 class="fa fa-sign-in" aria-hidden="true"></i></span>Login</a>
-                    <a class="w-50 text-center" href="under-construction.html"> <span class="mr-2"><i
+                    <a class="w-50 text-center text-white href=" under-construction.html"> <span class="mr-2"><i
                                 class="fa fa-paper-plane" aria-hidden="true"></i></span>Register</a>
                 </div>
             </div>
@@ -4049,7 +4001,8 @@
                             <img src="frontend/assets/images/product-images/1.jpg" class="img-fluid avater"
                                 alt="profile-image">
                             <h5>Adam Harshvardhan</h5>
-                            <a href=""> <span class="mr-1"><i class="fa fa-pencil" aria-hidden="true"></i></span> Upload
+                            <a href=""> <span class="mr-1"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                Upload
                                 Image
                             </a>
                         </div>
@@ -4305,9 +4258,11 @@
                                     </div>
                                 </div>
                                 <div class="jodit_statusbar" style="display: block;">
-                                    <div class="jodit_statusbar_item jodit_statusbar_item-right"><span>Chars: 0</span>
+                                    <div class="jodit_statusbar_item jodit_statusbar_item-right"><span>Chars:
+                                            0</span>
                                     </div>
-                                    <div class="jodit_statusbar_item jodit_statusbar_item-right"><span>Words: 0</span>
+                                    <div class="jodit_statusbar_item jodit_statusbar_item-right"><span>Words:
+                                            0</span>
                                     </div>
                                 </div>
                                 <div role="button" tabindex="-1" title="Break" class="jodit-add-new-line"
