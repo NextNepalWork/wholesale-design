@@ -494,6 +494,8 @@ sup {
 #banner-categories-wrapper {
     /* overflow: hidden; */
     z-index: 4;
+    max-height: 22rem;
+    min-height: 22rem;
 }
 
 #banner-categories-wrapper .description {

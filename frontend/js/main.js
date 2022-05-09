@@ -775,3 +775,24 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 });
 // Shipping, delivery cart Ends 
+
+// Banner Slick Slider Starts
+$('.banner-search').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    speed: 300,
+    arrows: false,
+    // centerMode: true,
+    autoplay: true,
+    dots: true,
+    responsive: [{
+        breakpoint: 325,
+        settings: {
+
+            dots: true
+        }
+    }]
+});
+// Banner Slick Slider Ends
