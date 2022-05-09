@@ -6,7 +6,7 @@ html {
 body {
     background-color: var(--body-color);
     transition: all 0.5s;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -573,6 +573,7 @@ sup {
     font-size: 15px;
 }
 
+
 #banner-categories-wrapper .card input[type="text"]:focus~.card-footer {
     display: block;
     position: absolute;
@@ -582,12 +583,23 @@ sup {
     background-color: white;
     top: 100%;
     border-radius: 0;
-    z-index: 99;
+    z-index: 99999;
     width: 100%;
 }
 
 #banner-categories-wrapper .card .card-footer {
     display: none;
+}
+
+#banner-categories-wrapper .slick-list {
+    overflow-y: unset;
+    overflow-x: clip;
+
+
+}
+
+#banner-categories-wrapper .slick-dots {
+    z-index: -1;
 }
 
 #banner-categories-wrapper .card-footer .search-list-wrapper li {
