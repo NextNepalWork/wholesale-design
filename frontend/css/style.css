@@ -587,13 +587,14 @@ sup {
     width: 100%;
 }
 
+
 #banner-categories-wrapper .card .card-footer {
     display: none;
 }
 
 #banner-categories-wrapper .slick-list {
     overflow-y: unset;
-    overflow-x: clip;
+    overflow-x: initial;
 
 
 }
