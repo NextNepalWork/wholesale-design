@@ -30,7 +30,6 @@
     .mega-menu-wrapper {
         width: 60rem;
     }
-
 }
 
 @media (max-width: 992px) {}
@@ -49,7 +48,6 @@
     /* Top Header Ends */
     /* Navbar */
     #top-header-navigation-wrapper {
-
         position: fixed;
         top: 0px;
         width: 100%;
@@ -67,7 +65,7 @@
 
     .search-button {
         position: absolute;
-        right: 10px;
+        right: 60px;
         font-size: 18px !important;
         line-height: 0.5rem !important;
     }
@@ -126,7 +124,6 @@
 
 @media (max-width: 600px) {
 
-
     h3,
     h4,
     h5,
@@ -141,14 +138,12 @@
     }
 
     /* Breadcrumb Ends */
-
     #cart_user .product-list {
         width: 92vw;
         overflow-x: scroll;
     }
 
     /* Index */
-
     #banner-categories-wrapper .description {
         width: 80%;
     }
@@ -298,7 +293,6 @@
         /* #banner-categories-wrapper .slick-slider {
             height: 12.8rem;
         } */
-
         /* Banner Ends */
         /* Breadcrumb  */
         #breadcrumb-wrapper .image img {
