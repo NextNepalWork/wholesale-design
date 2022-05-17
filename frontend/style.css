@@ -1325,7 +1325,7 @@ button.slick-prev {
 /* Index Page Ends */
 /* Product Listing */
 #breadcrumb ol li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 #product-listing-page .left-side-wrapper {
@@ -3471,6 +3471,7 @@ h6.active-item {
     object-position: center;
 }
 
+/* Top Header Index Banner */
 .track-header {
     background-color: var(--main-color);
 }
@@ -3496,3 +3497,217 @@ h6.active-item {
     color: unset;
     background: var(--main-color);
 }
+
+/* Top Header Index Banner Ends*/
+
+/* Seller Page */
+.form-box-title {
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    background: #f8f8f8;
+}
+
+.custom-input-file--4+label strong {
+    color: #676767;
+    background-color: #e6e6e6;
+    font-size: 14px;
+    padding: 0.4rem 1.25rem;
+    font-weight: 400;
+}
+
+
+/*************************** search select start  */
+/* #seller-port .main_delivery_info {
+    height: 250px;
+} */
+
+@media(max-width:34em) {
+    .main_delivery_info {
+        min-width: 150px;
+        width: auto;
+    }
+}
+
+#seller-port #select_box {
+    display: none !important;
+}
+
+#seller-port .dropdown-select {
+    background-color: #fff;
+    border-radius: 6px;
+    border: solid 1px #eee;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    height: 42px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+#seller-port .dropdown-select:focus {
+    background-color: #fff;
+}
+
+#seller-port .dropdown-select:hover {
+    background-color: #fff;
+}
+
+#seller-port .dropdown-select:active,
+#seller-port .dropdown-select.open {
+    background-color: #fff !important;
+    border-color: #bbb;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) inset;
+}
+
+#seller-port .dropdown-select:after {
+    height: 0;
+    width: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #777;
+    -webkit-transform: origin(50% 20%);
+    transform: origin(50% 20%);
+    transition: all 0.125s ease-in-out;
+    content: '';
+    display: block;
+    margin-top: -2px;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+#seller-port .dropdown-select.open:after {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+#seller-port .dropdown-select.open .list {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#seller-port .dropdown-select.open .option {
+    cursor: pointer;
+}
+
+#seller-port .dropdown-select.wide {
+    width: 100%;
+}
+
+#seller-port .dropdown-select.wide .list {
+    left: 0 !important;
+    right: 0 !important;
+}
+
+#seller-port .dropdown-select .list {
+    box-sizing: border-box;
+    transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 4px;
+    padding: 3px 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    max-height: 250px;
+    overflow: auto;
+    border: 1px solid #ddd;
+}
+
+#seller-port .dropdown-select .list:hover .option:not(:hover) {
+    background-color: transparent !important;
+}
+
+#seller-port .dropdown-select .dd-search {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 4px;
+}
+
+#seller-port .dropdown-select .dd-searchbox {
+    width: 90%;
+    padding: 0.5rem;
+    border: 1px solid #999;
+    border-color: #999;
+    border-radius: 4px;
+    outline: none;
+    height: 40px;
+}
+
+#seller-port .dropdown-select .dd-searchbox:focus {
+    border-color: #12CBC4;
+}
+
+#seller-port .dropdown-select .list ul {
+    padding: 0;
+}
+
+#seller-port .dropdown-select .option {
+    cursor: default;
+    font-weight: 400;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    transition: all 0.2s;
+    list-style: none;
+}
+
+#seller-port .dropdown-select .option:hover,
+#seller-port .dropdown-select .option:focus {
+    background-color: #f6f6f6 !important;
+}
+
+#seller-port .dropdown-select .option.selected {
+    font-weight: 600;
+    color: #12cbc4;
+}
+
+#seller-port .dropdown-select .option.selected:focus {
+    background: #f6f6f6;
+}
+
+#seller-port .dropdown-select a {
+    color: #aaa;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#seller-port .dropdown-select a:hover {
+    color: #666;
+}
+
+/*********************************** search select end  */
+/* Seller Page Ends */
