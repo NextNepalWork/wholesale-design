@@ -302,6 +302,9 @@ sup {
 /* Top Header Navigation */
 #top-header-navigation-wrapper {
     background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 #top-header-navigation-wrapper ul li a {
@@ -319,7 +322,7 @@ sup {
 }
 
 .navigation-wrap {
-    position: sticky;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;

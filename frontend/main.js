@@ -13,9 +13,10 @@ function myFunction() {
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 350) {
-        $(".navigation-wrap").css("border-bottom", "0.5px solid #41B54A");
+        $("#top-header-navigation-wrapper").css("border-bottom", "0.5px solid #41B54A");
     } else {
-        $(".navigation-wrap").css("border-bottom", "unset");
+
+        $("#top-header-navigation-wrapper").css("border-bottom", "unset");
     }
 }); // Navigation Js Scroll Ends
 // Brand Slick Slider Starts
@@ -798,3 +799,14 @@ $('.banner-search').slick({
     }]
 });
 // Banner Slick Slider Ends
+
+function execute() {
+    var a = Math.floor((Math.random() * 1) + 1);
+    var b = document.getElementById("cask").value;
+    if (b == a) {
+        alert("correct");
+
+    } else {
+        alert("wrong");
+    }
+}
