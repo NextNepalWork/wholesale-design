@@ -490,10 +490,10 @@ sup {
 }
 
 #banner-categories-wrapper {
-    overflow: hidden;
+
     z-index: 4;
-    max-height: 22rem;
-    min-height: 22rem;
+    max-height: 33rem;
+    min-height: 33rem;
 }
 
 /* 
@@ -535,8 +535,8 @@ sup {
 }
 
 #banner-categories-wrapper .banner-item img {
-    max-height: 22rem;
-    min-height: 22rem;
+    max-height: 33rem;
+    min-height: 33rem;
     object-fit: cover;
     object-position: center;
     width: 100%;
@@ -658,7 +658,7 @@ sup {
     }
 } */
 #banner-categories-wrapper .slick-slider {
-    height: 22rem;
+    height: 33rem;
 }
 
 #top-header-navigation-wrapper .search .card-footer .search-list-wrapper li:hover {

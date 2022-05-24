@@ -51,7 +51,7 @@ $('.slick-slider').slick({
     arrows: false,
     // centerMode: true,
     autoplay: true,
-    dots: true,
+    dots: true
 });
 // Banner Slick Slider Ends
 // Banner Slick Slider Starts
@@ -785,10 +785,10 @@ $('.banner-search').slick({
     slidesToScroll: 1,
     fade: true,
     speed: 300,
-    arrows: true,
+    arrows: false,
     // centerMode: true,
     autoplay: true,
-    dots: false,
+    dots: true,
     responsive: [{
         breakpoint: 325,
         settings: {
